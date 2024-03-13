@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gerador de Relatório</title>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="main.js" defer></script> 
+</head>
+<body>
+
+    <button id="generate-PDF"> Gerar PDF</button>
+
+    <div>
+        <br>
+        <input id="valor_nome" type="text" name="valor" placeholder="nome do cliente"/> <br>
+        <input id="valor_geracao" type="text" name="valor" placeholder="geração de ?"/> Valor sem unidades de medida<br>
+        <input id="valor_data" type="text" name="valor" placeholder="data "/> DD/MM/AAAA <br>
+        <input id="valor_placa" type="number" name="valor" placeholder="Número de Placas "/> <br>
+        <input id="valor_potencia" type="number" name="valor" placeholder="Potência de cada Placa "/> Ex: 560 <br>
+        <input id="valor_potencia_inv" type="number" name="valor" placeholder="Potência do Inversor "/> Ex: 7.7, "sete mil e setecentos kW"<br>
+        <input id="valor_dinheiro" type="number" name="valor" placeholder="Valor do Sistema em reais"/> Ex: 20.200, "vinte mil e duzentos reais"<br>
+        <label>Selecionar o Módulo</a>
+        <select id="escolher_modulo"  name="select" >
+            <option value="MODULOS/OSDA.JPG" >OSDA</option>
+            <option value="MODULOS/TSUN POWER.JPG">TSUN</option>
+            <option value="MODULOS/TRINA SOLAR.JPG">TRINA</option>
+            <option value="MODULOS/RESUN SOLAR.JPG">RESUN</option>
+            <option value="MODULOS/JA SOLAR.JPG">JA</option>
+            <option value="MODULOS/HONOR SOLAR.JPG">HONOR</option>
+            <option value="MODULOS/ERA SOLAR.JPG">ERA</option>
+        </select>
+        <br>
+        <label>Selecionar o Inversor</a>
+            <select id="escolher_inversor"  name="select" >
+                <option value="INVERSORES/GOODWE.JPG">GOODWE</option>
+                <option value="INVERSORES/DEYE.JPG">DEYE</option>
+                <option value="INVERSORES/MICRO DEYE.JPG">MICRO DEYE</option>
+                <option value="INVERSORES/SOLIS.JPG">SOLIS</option>
+                <option value="INVERSORES/SUNGROW.JPG">SUNGROW</option>
+                <option value="INVERSORES/WEG.JPG">WEG</option>
+                <option value="INVERSORES/SOLPLANET.JPG">SOLPLANET</option>
+            </select>
+        <br>
+        <label>Selecionar Cidade</a>
+            <select id="escolher_cidade"  name="select" >
+                <option value="Pesqueira - PE">Pesqueira - PE</option>
+                <option value="Belo Jardim - PE">Belo Jardim - PE</option>
+            </select>
+    
+
+        <input type="submit" name="" onclick="chamar_global()">
+       
+    </div>
+
+    <div id="content">
+        <div class="folha"> 
+        <div class="babalu"> 
+            <img src="LOGOS EMPRESAS/FOX.jpg">
+        </div>
+       
+
+        <h1 id="digito_nome" class=" title"> Nome do Cliente </h1>
+        <h1 id="digito_geracao"class=" title"> Geração Média Mensal de xxxkWh</h1>
+        
+        <div> 
+            <h2 class="title2 margins "> Data da Proposta</h2>
+            <h2 id="digito_data" class="title3 margins "> Data não preenchida</h2>
+        </div>
+        <div> 
+            <h2 class="title2 margins"> Validade da Proposta</h2>
+            <h2 class="title3 margins"> 10 Dias</h2>
+        </div>
+        
+        <div> 
+            <h2 class="title2 margins "> Referência </h2>
+            <h2 class="title3 margins"> 2024-FOX-PROP</h2>
+        </div>
+
+        <div> 
+            <h2 class="title4_top" > Telefone/WhatsApp:(87) 9 9121-2385 </h2>
+            <h2 class="title4" > Instagram: @quarksprojetoseletricos </h2>
+            <h2 class="title4"> Pesqueira - Pernambuco CEP: 55200-000 </h2>
+            <h2 class="title4" > Rua Antônio Barbosa Filho, 82 </h2>
+        </div>
+    </div>
+
+
+        <div class="folha" >
+            
+            <div class="babalu2"> 
+                <img src="LOGOS EMPRESAS/FOX_RODAPE.jpg">
+            </div>
+            <div> 
+                <h2 class="title5  "> 1 - EQUIPAMENTO QUE IRÁ COMPOR O SISTEMA </h2>
+            </div>
+            
+            <div> 
+                <h2 class="title6  "> Potência do Sistema</h2>
+                <h2 id="digito_pot_sistema" class="title7  "> xxxkWp</h2>
+            </div>
+            <div> 
+                <h2 class="title6 "> Área necessária para instalação</h2>
+                <h2 id="digito_area_sistema"class="title7 "> mmmmm^2</h2>
+            </div>
+            
+            <div> 
+                <h2 class="title6  "> Estrutura de fixação </h2>
+                <h2 class="title7 "> Cerâmico/Fribrocimento</h2>
+            </div>
+
+
+
+             <div class="campo">
+                <h2 class="title8"> Dados do Painel Solar</h2>
+                <h2 id="MarcaModulo"class="title9"> Marca do Painel</h2>
+                <div>
+                <h2 class="title10"> Potência Nominal</h2>
+                <h2 id="PotenciaModulo" class="title11">XXXWp </h2>
+                </div>
+                <div>
+                <h2 class="title10"> Garantia (Defeitos)</h2>
+                <h2 class="title11">10 Anos </h2>
+                </div>
+                <div>
+                <h2 class="title10"> Garantia (Eficiência)</h2>
+                <h2 class="title11">25 Anos </h2>
+                </div>
+                
+                <h2 class="title10"> Quantidade</h2>
+                <h2 id="QuantidadePlacas"class="title12"> X </h2>
+                </div>
+                
+                <div class="campo1" >
+                    <img id="modulo" src="" width="" height="">
+                </div>
+
+                <div class="campo4">
+                    <img id="inversor" src="" width="" height="">
+                </div>
+
+                <div class="campo3">
+                
+                    <h2 class="title8"> Dados do Inversor Fotovoltaico</h2>
+                    <h2 id="MarcaInversor" class="title9"> Marca do Inversor</h2>
+
+                    <div>
+                    <h2 class="title10"> Potência Nominal</h2>
+                    <h2 id="Potenciainversor" class="title11">XXX kW </h2>
+                    </div>
+                    <div>
+                    <h2 class="title10"> Garantia</h2>
+                    <h2 class="title11">5 Anos </h2>
+                    </div>
+                    <div>
+                    <h2 class="title10"> Monitoramento</h2>
+                    <h2 class="title11"> Wi-fi </h2>
+                    </div>
+                    <div>
+                    <h2 class="title10"> Quantidade</h2>
+                    <h2 class="title12"> 1 </h2>
+                    </div>
+
+
+                </div>
+  
+                <div> 
+                    <h2 class="title5_2  "> OBSERVAÇÕES </h2>
+                </div> 
+
+                    <p id= "obs" class="espaco_obs" >texto foda </p>
+                <div> 
+                    <h2 class="title5  "> 2 - ESTIMATIVAS DE GERAÇÃO </h2>
+                </div> 
+
+
+                    <div class="campo_5">
+
+                    <div class="campo_6">
+
+                        
+                            <div class = "campo_8">
+                                <h2 class="title13"> Consumo Atual</h2>
+                            </div>    
+                            <div class = "campo_9"> 
+                                <h2 id= digito_geracao_2 class="title14"> 3000 kWh </h2> 
+                            </div>    
+                    </div>
+                    <div class="campo_7">
+
+                        <div class="campo_6">
+                            <div class = "campo_8_1"> 
+                                <h2 class="title13"> Geração Média</h2>
+                            </div>     
+                            <div class = "campo_9_1"> 
+                                <h2 id= digito_geracao_3 class="title14"> 3000 kWh </h2> 
+                            </div>    
+                        </div>
+
+                     </div>
+                
+
+                </div>
+            
+                <div> 
+                    <h2 class="title15  "> Investimento</h2>
+                    <h2 id=digito_dinheiro class="title16 "> R$ 100.000,00</h2>
+                </div>
+           
+
+            </div>
+
+          
+            
+
+            <div id= "geral" class="EK" > 
+                <h2 class="teste"> TESTE DE PROPRIEDADES </h2>
+            </div> 
+            
+            <label>Selecionar Empresa</a>
+                <select id="escolher_empresa"  name="select" >
+                    <option value="FOX">FOX</option>
+                    <option value="EK">EK</option>
+                </select>
+            <input type="submit" name="" onclick="mudar_empresa()">
+            
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+ 
+
+
+
+</body>
+
+
+
+
+</html>

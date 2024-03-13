@@ -1,0 +1,484 @@
+/*Cores (Proposta Comercial - FOX ENERGIA SOLAR)
+    #2F5597 (Caixa títulos, Gráficos)
+    #D9E1F2 (Caixa Normal)
+    #8EA9DB (Cor desenvolvimento, Subtitulos)
+    #FF0000 (Destaque )
+    #FAD5D4 (Destaque 02)
+    #C00000 (Gráficos - CONSUMO)
+    #2F5597 (Gráficos - GERAÇÃO)
+*/ 
+
+/*Cores    (Proposta Comercial - EK ELÉTRICA)
+    #042B62 (Caixa títulos, Gráficos)
+    #D9E1F2 (Caixa Normal)
+    #FFC000 (Destaque )
+    #FFFF99 (Destaque 02)
+    #C00000 (Gráficos - CONSUMO)
+    #2F5597 (Gráficos - GERAÇÃO)
+*/ 
+
+
+
+.folha {
+    width: 210mm;
+    height: 297mm;
+   /* border: 1px solid black ; */
+}
+
+
+.title {
+
+    background-color: #2F5597;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    font-family: calibri;
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+
+}
+
+.margins {
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+.babalu img{
+    margin-top: 4cm;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    align-content: center;
+    text-align: center;
+    width: 18.2cm;
+    height: 12.0cm;
+}
+
+.babalu2 img{
+    margin-top: 1cm;
+    margin-left: 15.22cm;
+    display:grid;
+    width: 4.5cm;
+    height: 2cm;
+}
+
+.title2{
+    background-color: #2F5597;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    width: 7.5cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.title3{
+    background-color:  #D9E1F2;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    font-family: calibri;
+    width: 10.8cm;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: -19px;
+    font-weight:normal;
+}
+
+.title4_top{
+    text-align: center; 
+    font-size: 20px;
+    font-family: calibri;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.title4{
+    text-align: center; 
+    font-size: 20px;
+    font-family: calibri;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.title5{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 2px;
+    background-color:#8EA9DB ;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    width: 18.2cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.title5_2{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 0px;
+    background-color:#8EA9DB ;
+    font-size: 24px;
+    color: black;
+    text-align:center;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    width: 18.2cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+
+.title6{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #8EA9DB;
+    font-size: 27px;
+    color: black;
+    text-align: left;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    width: 10.9cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.title7{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color:  #D9E1F2;
+    font-size: 27px;
+    color: black;
+    text-align:center;
+    font-family: calibri;
+    width: 7.75cm;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: -19px;
+    font-weight:normal
+}
+
+.campo {
+    margin-top: 8px;
+    margin-left: 1.4cm;
+    width: 92mm;
+    height: 47mm;
+    border: 0.01px solid white ;
+    display: inline-block;
+    font-size: 0;
+}
+.campo1 {
+    margin-top: 8px;
+    margin-right:1.27cm;
+    width: 88mm;
+    height: 47mm;
+    border: 0.01px solid white  ;
+    display: inline-flex;
+    float:inline-end;
+    font-size: 0;
+}
+
+.campo3{
+    margin-right: 1.27cm;
+    margin-top: 5px;
+    width: 92mm;
+    height: 47mm;
+    border: 0.01px solid white ;
+    float:inline-end;
+    font-size: 0;
+}
+
+.campo4 {
+    margin-top: 5px;
+    margin-left: 1.4cm;
+    width: 88mm;
+    height: 47mm;
+    border: 0.01px solid white  ;
+    display: inline-flex;
+    font-size: 0;
+}
+
+.title8{
+    font-size: 0;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #8EA9DB;
+    font-size: 24px;
+    color: black;
+    text-align:center;
+    font-family:calibri;
+    width: 91mm;
+    font-weight: bold;
+    border: 0.5px solid white ;
+    
+}
+
+.title9{
+    font-size: 0;
+    margin-top: -0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #D9E1F2;
+    font-size: 22px;
+    color: black;
+    text-align:center;
+    font-family:calibri;
+    width: 91mm;
+    height: 7mm;
+    font-weight: normal;
+    border: 0.5px solid white ;
+    
+}
+
+
+.title10{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    background-color: #8EA9DB;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    font-family: calibri;
+    width: 61mm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.title11{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color:  #D9E1F2;
+    font-size: 22px;
+    color: black;
+    text-align:center;
+    font-family: calibri;
+    width: 30mm;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: -2.0px;
+    font-weight:normal;
+}
+
+.title12{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color:  #FF0000;
+    font-size: 22px;
+    color: White;
+    text-align:center;
+    font-family: calibri;
+    width: 30mm;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: -2px;
+    font-weight:bold;
+}
+
+.title13{
+    display:block;
+    padding: 2px;
+    font-size: 24px;
+    color: black;
+    text-align:center;
+    font-family:calibri;
+    font-weight: bold;
+}
+   
+.title14{
+
+    padding: -2px;
+    font-size: 40px;
+    margin-top: 17px;
+    color: black;
+    text-align:center;
+    font-family:calibri;
+    font-weight: normal;
+}
+  
+
+.title15{
+    margin-top: 0px;
+    margin-bottom: 2cm;
+    padding-block: 5mm;
+    background-color: #8EA9DB;
+    font-size: 45px;
+    color: black;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    width: 9.5cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align:center;
+}
+.title16{
+
+    margin-top: -1px;
+    margin-bottom: 0px;
+    padding-block: 5mm;
+    background-color:  #D9E1F2;
+    font-size: 45px;
+    color: black;
+    text-align:center;
+    font-family: calibri;
+    width: 8.75cm;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: -10px;
+    font-weight:normal
+ 
+
+}
+
+
+
+.espaco_obs{
+
+    font-size: 20px;
+    color: black;
+    text-align:justify;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    width: 18.2cm;
+    display: inline-block;
+    /* border: 1px solid black;*/
+    font-weight: normal;
+    height: 30mm;
+    /*border:1px solid;*/
+
+}
+
+.campo_5{
+  
+    font-size: 0;
+    margin-top: -10px;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    height: 30mm;
+    width: 18.2cm;
+   }
+
+.campo_6{
+    display: inline-block;
+    font-size: 0;
+    margin-top:-1mm;
+    height: 2.2cm;
+    width: 9.1cm;
+
+}
+
+.campo_7{
+    display: inline-block;
+    font-size: 0;
+    height: 2.2cm;
+    width: 9.1cm;
+ 
+}
+
+.campo_8{
+    
+    margin:auto;
+    height: 0.9cm;
+    width: 7cm;
+    background-color: #8EA9DB;
+    color: black;
+    font-size: 10px;
+    font-family:calibri;
+    font-weight: bold;
+ 
+  
+
+}
+
+.campo_9{
+    font-size:0;
+    margin:auto;
+    height: 1.2cm;
+    width: 7cm;
+    margin-top: -20px;
+    background-color:#D9E1F2;
+}
+
+.campo_8_1{
+    font-size:0;
+    margin:auto;
+    height: 0.9cm;
+    width: 7cm;
+    background-color: #FF0000;
+    Color: White;
+}
+
+
+.campo_9_1{
+    font-size:0;
+    margin:auto;
+    height: 1.2cm;
+    width: 7cm;
+    margin-top: -20px;
+    background-color: #FAD5D4;
+}
+
+.texto_parte2{
+    color: black;
+    font-family:calibri;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+.FOX{
+
+    --corfundo: #8EA9DB;
+    --corletra:black;
+}
+
+.EK{
+
+    --corfundo: #a9db3e;
+    --corletra:red;
+}
+.teste{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 2px;
+    background-color:var(--corfundo);
+    font-size: 30px;
+    color: var(--corletra);
+    text-align: left;
+    font-family: calibri;
+    margin-left: 1.4cm;
+    margin-right: 1.4cm;
+    width: 18.2cm;
+    display: inline-block;
+    border: 1px solid white;
+    font-weight: bold;
+}
